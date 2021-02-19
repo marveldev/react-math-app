@@ -1,13 +1,193 @@
 body {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background-color: #018f94;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.content {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  background-color: #b3c8c17c;
+  padding: 3em 2em 1.5em 5em;
+  box-shadow: 0 4px 8px 0 #00000033;
+}
+
+#firstValue {
+  padding: 0.3em 1em;
+  border: 2px solid black;
+  font-size: 2em;
+}
+
+#secondValue {
+  padding: 0.3em 1em;
+  border: 2px solid black;
+  font-size: 2em;
+}
+
+.sign {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0 2em;
+}
+
+.input-form {
+  display: inline;
+}
+
+.result-box {
+  font-size: 1.5em;
+  height: 2.5em;
+  width: 7em;
+  padding: 0 1em;
+  border: none;
+}
+
+#confirmButton {
+  display: block;
+  margin: 1em 3em 0 auto;
+  height: 2em;
+  width: 5em;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.content button:active {
+  transform: translateY(4px);
+}
+
+.button-container>button {
+  display: none;
+  height: 2.2em;
+  width: 8em;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.button-container {
+  text-align: center;
+  margin: 1em auto;
+}
+
+#correctMessage {
+  display: none;
+  color: #03520d;
+  font-weight: 700;
+  font-size: 1.8em;
+  margin: 0 0 1em 0;
+}
+
+#wrongMessage {
+  display: none;
+  color: #b30101;
+  font-weight: 700;
+  font-size: 1.8em;
+  margin: 0 0 1em 0; 
+} 
+
+@media screen and (max-width: 1024px) {
+  .sign {
+    margin: 0.5em;
+  }
+
+  .value {
+    padding: 0.2em 0.8em;
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 70%;
+    padding: 1.5em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  .value {
+    padding: 0.15em 0.6em;
+    font-size: 1em;
+  }
+
+  .input {
+    padding: 0.5em 0.3em;
+    width: 6em;
+  }
+
+  .sign {
+    margin: 0.2em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .content {
+    width: 75%;
+  }
+
+  h1 {
+    font-size: 1.1em;
+  }
+
+  .input {
+    width: 8em;
+  }
+
+  .confirm-button {
+    margin-left: 17em;
+    margin-top: 0.6em;
+    font-size: 0.7em;
+    padding: 0.3em 0.5em;
+  }
+
+  .button-container {
+    margin-top: 1em;
+  }
+
+  .button-container>button {
+    padding: 0.3em 0.5em;
+    margin: 0 0.1em;
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .input {
+    width: 6em;
+  }
+
+  .confirm-button {
+    margin-left: 15em;
+  }
+
+  .sign {
+    margin: 0.1em;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .input {
+    width: 3em;
+  }
+  
+  .confirm-button {
+    margin-left: 0;
+  }
 }
